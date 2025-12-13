@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+  padding: 20px; 
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  width: 100%; 
+  max-width: 350px; 
+  box-shadow: 2px 2px 10px rgba(67, 236, 255, 0.2);
+  margin: 10px;
+  overflow: hidden; 
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.3s ease; 
+}
+
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.9); 
+}
+
+
+.image-container {
+  width: 100%;
+  aspect-ratio: 9 / 16; 
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+
+.card-content {
+  padding: 10px;
+}
+
+
+.card-content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #c3e6f3;
+}
+
+
+.card-content p {
+  font-size: 14px;
+  color: #fffbfb;
+  margin: 10px 0;
+}
+
+
+.card-buttons {
+  display: flex;
+  justify-content: space-evenly; 
+  margin-top: 15px;
+}
+
+.card-button-link {
+  color: #0bbcee;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 1px solid #0bbcee;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.card-button-link:hover {
+  background-color: #0bbcee;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .card-grid {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .card {
+    max-width: 100%; 
+  }
+}
+.upload-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.upload-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.upload-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%; 
+  max-width: 400px; 
+  text-align: center;
+}
+
+.upload-content input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.upload-content button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #2b79c7;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth button hover effect */
+}
+
+.upload-content button:hover {
+  background: #79aee6;
+}
+
+.upload-button{
+  text-align: start;
+}
+
+.password-prompt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.password-prompt input {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.password-prompt button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background: #2b79c7;
+  color: white;
+  cursor: pointer;
+}
+
+.password-prompt button:hover {
+  background: #79aee6;
+}
