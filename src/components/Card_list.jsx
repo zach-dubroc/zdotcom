@@ -35,21 +35,7 @@ function CardList() {
 
   return (
     <div className="card-list-container">
-      {showPasswordPrompt && (
-        <div className="password-prompt">
-          <h3>Enter Password</h3>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-          />
-          <button onClick={handlePasswordSubmit}>Submit</button>
-          <button onClick={() => setShowPasswordPrompt(false)}>Cancel</button>
-        </div>
-      )}
-      {showUpload && <Upload onClose={() => setShowUpload(false)} />}
-      <h2>mca</h2>
+      <h2>mca final projects</h2>
       {loading ? (
         <div className="spinner">Loading...</div>
       ) : (

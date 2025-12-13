@@ -28,9 +28,18 @@ function ContactCard() {
         >
           linkedIn
         </a>
-        <Link className="contact-links" to="/mca">
-          mcgames
-        </Link>
+
+        {/* project tabs: collapsible tree/dropdown */}
+        <details className="projects-tree">
+          <summary>Projects</summary>
+          <ul>
+            <li>
+              <Link className="project-links" to="/mca">
+                mcgames
+              </Link>
+            </li>
+          </ul>
+        </details>
       </div>
     </aside>
   );

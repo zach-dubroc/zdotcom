@@ -41,6 +41,40 @@
   color: #ffffff;
 }
 
+.projects-tree {
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  padding: 4px;
+}
+.projects-tree summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  color: #bfe1ff;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.projects-tree summary::-webkit-details-marker {
+  display: none;
+}
+.projects-tree summary::after {
+  content: "▸";
+  transition: transform 0.18s ease;
+  margin-left: 8px;
+}
+.projects-tree[open] summary::after {
+  transform: rotate(90deg);
+}
+.projects-tree ul {
+  list-style: none;
+  margin: left;
+  color: #ffffff;
+}
+
 @media (max-width: 780px) {
   .contact-card {
     width: 100%;
