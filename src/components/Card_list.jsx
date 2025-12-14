@@ -3,6 +3,7 @@ import postsData from "../posts_temp.json";
 import Card from "./Card";
 import "../styles/Card.css";
 import { Link } from "react-router-dom";
+import mcaLogo from "../ass/MCA-LOG-Round-3800x2400-1-1024x647.png";
 function CardList() {
   const [posts, setPosts] = useState([]);
   const [showUpload, setShowUpload] = useState(false);
@@ -29,11 +30,14 @@ function CardList() {
       <Link className="home-link" to="/">
         back
       </Link>
-      <h2>final projects</h2>
-      <p>
-        from graduates of the mississippi coding acedemies
-        <br />
-      </p>
+      <div className="cardlist-header">
+        <img className="mca-icon" src={mcaLogo} alt="MCA logo" />
+        <div />
+        <p>
+          from graduates of the mississippi coding acedemies
+          <br />
+        </p>
+      </div>
       {loading ? (
         <div className="spinner">Loading...</div>
       ) : (

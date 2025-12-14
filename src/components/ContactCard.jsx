@@ -30,8 +30,9 @@ function ContactCard() {
         </a>
 
         {/* project tabs: collapsible tree/dropdown */}
+        {/* TODO */}
         <details className="projects-tree">
-          <summary>Projects</summary>
+          <summary>projects</summary>
           <ul>
             <li>
               <Link className="project-links" to="/mca">

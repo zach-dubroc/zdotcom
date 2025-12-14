@@ -7,6 +7,23 @@
   margin: 0 auto;
   padding: 10px;
   text-align: left;
+  text-wrap: wrap;
+}
+
+.cardlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 10px solid rgba(255, 255, 255, 0.104);
+}
+
+.mca-icon {
+  width: 200px;
+  height: 100%;
+  object-fit: contain;
+  border: 5px solid rgb(44, 213, 255);
+  margin-bottom: 10px;
 }
 
 .card-grid {
