@@ -3,41 +3,31 @@ import postsData from "../posts_temp.json";
 import Card from "./Card";
 import "../styles/Card.css";
 import { Link } from "react-router-dom";
-import mcaLogo from "../ass/MCA-LOG-Round-3800x2400-1-1024x647.png";
+
 function CardList() {
   const [posts, setPosts] = useState([]);
-  const [showUpload, setShowUpload] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [password, setPassword] = useState("");
-  const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
-
-  const PASSWORD = import.meta.env.PASSWORD;
-  //not today but one day
-
-  const fetchPosts = () => {
-    setLoading(true);
-    //nahhhhhhhh
-    setPosts(postsData);
-    setLoading(false);
-  };
 
   useEffect(() => {
-    fetchPosts();
+    setPosts(postsData);
+    setLoading(false);
   }, []);
 
   return (
     <div className="card-list-container">
       <Link className="home-link" to="/">
-        back
+        Back
       </Link>
+
       <div className="cardlist-header">
-        <img className="mca-icon" src={mcaLogo} alt="MCA logo" />
-        <div />
-        <p>
-          from graduates of the mississippi coding acedemies
-          <br />
-        </p>
+        <img
+          className="mca-icon"
+          src="https://zvd-uploads.s3.us-east-1.amazonaws.com/mcaround.png"
+          alt="MCA logo"
+        />
+        <p>Projects by graduates of the Mississippi Coding Academies</p>
       </div>
+
       {loading ? (
         <div className="spinner">Loading...</div>
       ) : (
@@ -50,4 +40,5 @@ function CardList() {
     </div>
   );
 }
+
 export default CardList;
