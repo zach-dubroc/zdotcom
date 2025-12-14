@@ -8,7 +8,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/zdotcom/">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/mca" element={<Games />} />
