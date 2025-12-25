@@ -143,6 +143,7 @@
 @media (max-width: 980px) {
   .landing {
     flex-direction: column;
+    justify-content: space-between;
   }
   .profile-card {
     width: 100%;
@@ -153,10 +154,12 @@
   .app-sidebar {
     width: 100%;
     height: auto;
-    padding-bottom: 10px;
   }
   .app-content {
     margin-left: 0;
     padding-top: 12px;
   }
+}
+.map {
+  margin: 10px;
 }

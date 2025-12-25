@@ -4,11 +4,13 @@ import ContactCard from "./ContactCard";
 
 function NavBar() {
   return (
-    <aside className="app-sidebar">
-      <div className="sidebar-header">
-        <ContactCard />
-      </div>
-    </aside>
+    <div className="container">
+      <aside className="app-sidebar">
+        <div className="sidebar-header">
+          <ContactCard />
+        </div>
+      </aside>
+    </div>
   );
 }
 
