@@ -1,4 +1,4 @@
-import React from "react";
+import "react";
 import CardList from "../components/Card_list";
 
 function Games() {

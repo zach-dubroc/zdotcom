@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import postsData from "../posts_temp.json";
 import Card from "./Card";
 import "../styles/Card.css";

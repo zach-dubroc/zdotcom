@@ -1,20 +1,20 @@
 .contact-card {
-  width: 100%;
+/*  width: 100%;*/
   padding: 12px;
-  background: transparent;
+/*  background: transparent;*/
   border-radius: 8px;
   text-align: left;
-  display: flex;
+/*  display: flex;*/
   flex-direction: column;
-  gap: 10px;
+/*  gap: 10px;*/
   color: #e6eef8;
 }
-.contact-avatar {
+/*.contact-avatar {
   width: 222px;
   height: 194;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.112);
-}
+}*/
 .contact-name {
   margin: 0;
   font-size: 16px;
@@ -75,8 +75,8 @@
   color: #ffffff;
 }
 
-@media (max-width: 780px) {
+/*@media (max-width: 780px) {
   .contact-card {
     width: 100%;
   }
-}
+}*/

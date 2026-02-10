@@ -4,16 +4,10 @@ import "../styles/ContactCard.css";
 
 function ContactCard() {
   return (
-    <aside className="contact-card">
-      <img
-        className="contact-avatar"
-        src="https://zvd-uploads.s3.us-east-1.amazonaws.com/pf.JPG"
-        alt="avatar"
-      />
+    <div className="contact-card">
       <h2 className="contact-name">zach dubroc</h2>
-
       <div className="contact-links">
-        <a href="mailto:you@example.com">zacharydubroc@outlook.com</a>
+        <a href="mailto:zacharydubroc@outlook.com">email</a>
         <a
           href="https://github.com/zach-dubroc"
           target="_blank"
@@ -28,9 +22,13 @@ function ContactCard() {
         >
           linkedIn
         </a>
+          <a
+              className="resume-link"
+              href="../../assets/zacharydubroc_resume.pdf"
+          >
+              resume
+          </a>
 
-        {/* project tabs: collapsible tree/dropdown */}
-        {/* TODO */}
         <details className="projects-tree">
           <summary>projects</summary>
           <ul>
@@ -42,7 +40,7 @@ function ContactCard() {
           </ul>
         </details>
       </div>
-    </aside>
+    </div>
   );
 }
 

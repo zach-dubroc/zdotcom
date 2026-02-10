@@ -1,5 +1,5 @@
 // App.jsx
-import React from "react";
+import"react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 
