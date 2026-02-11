@@ -1,0 +1,63 @@
+.zcalc-container {
+    width: 100%;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+.zcalc-subtitle p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    text-align: left;
+}
+
+.input-group input {
+    background: #000000;
+    border: 1px solid #334155;
+    color: #e5e7eb;
+}
+
+    .input-group input:focus {
+        outline: none;
+        border-color: #818cf8;
+    }
+
+.results-box {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #000000;
+    border: 1px solid #334155;
+}
+
+    .results-box h3 {
+        font-size: 0.95rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #c7d2fe;
+    }
+
+.result-line {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.result-line strong {
+    color: #a5b4fc;
+}
+
+.gdal-command {
+    margin-top: 1rem;
+}
+
+.gdal-label {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-bottom: 0.4rem;
+}
+
+.gdal-command code {
+    padding: 0.75rem;
+    background: #020617;
+    color: #e5e7eb;
+    word-break: break-word;
+}

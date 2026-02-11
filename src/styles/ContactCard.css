@@ -1,8 +1,5 @@
 .contact-card {
-/*  width: 100%;*/
   padding: 12px;
-/*  background: transparent;*/
-  border-radius: 8px;
   text-align: left;
 /*  display: flex;*/
   flex-direction: column;
@@ -43,11 +40,11 @@
 
 .projects-tree {
   margin-top: 8px;
-  background: rgba(255, 255, 255, 0.02);
   border-radius: 8px;
   padding: 4px;
 }
 .projects-tree summary {
+  background: rgba(255, 255, 255, 0.02);
   list-style: none;
   cursor: pointer;
   display: flex;
@@ -64,14 +61,12 @@
 .projects-tree summary::after {
   content: "▸";
   transition: transform 0.18s ease;
-  margin-left: 8px;
 }
 .projects-tree[open] summary::after {
   transform: rotate(90deg);
 }
 .projects-tree ul {
   list-style: none;
-  margin: left;
   color: #ffffff;
 }
 

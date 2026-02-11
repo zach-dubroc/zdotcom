@@ -1,5 +1,4 @@
 import "react";
-import { Link } from "react-router-dom";
 import "../styles/ContactCard.css";
 
 function ContactCard() {
@@ -29,16 +28,16 @@ function ContactCard() {
               resume
           </a>
 
-        <details className="projects-tree">
-          <summary>projects</summary>
-          <ul>
-            <li>
-              <Link className="project-links" to="/mca">
-                mcgames
-              </Link>
-            </li>
-          </ul>
-        </details>
+        {/*<details className="projects-tree">*/}
+        {/*  <summary>projects</summary>*/}
+        {/*  <ul>*/}
+        {/*    <li>*/}
+        {/*      <Link className="project-links" to="/mca">*/}
+        {/*        mcgames*/}
+        {/*      </Link>*/}
+        {/*    </li>*/}
+        {/*  </ul>*/}
+        {/*</details>*/}
       </div>
     </div>
   );

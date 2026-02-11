@@ -1,8 +1,6 @@
-#root {
+﻿#root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .logo {
@@ -38,13 +36,13 @@
 }
 
 .app-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 24px 12px;
-  background: #0f172a;
-  color: white;
-  width:100%
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 24px 12px;
+    background: #0f172a;
+    color: white;
+    width: 100%;
 }
 .app-sidebar a {
   color: #e2e8f0;
@@ -52,8 +50,9 @@
 }
 
 .app-content {
-  padding: 28px;
-  display: flex;
+    padding: 28px;
+    display: flex;
+    background: rgba(255,255,255,0.02);
 }
 
 .sidebar-nav ul {
@@ -98,12 +97,12 @@
   gap: 24px;
 }
 .profile-card {
-  background: #fff;
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  width: min(640px, 66%);
+    background: #fff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: min(640px, 66%);
 }
 .profile-image {
   width: 96px;
@@ -133,3 +132,42 @@
 }
 
 
+
+.projects-tree {
+  margin-top: 8px;
+  padding: 5%;
+}
+.projects-tree summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  padding: 10%;
+  color: #bfe1ff;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.02);
+}
+.projects-tree summary::-webkit-details-marker {
+  display: none;
+}
+.projects-tree summary::after {
+  content: "▸";
+  transition: transform 0.18s ease;
+}
+.projects-tree[open] summary::after {
+  transform: rotate(90deg);
+}
+.projects-tree ul {
+  list-style: none;
+  padding-right: 2%;
+  color: #ffffff;
+}
+.project-links{
+    padding: 10%;
+    margin-right: 2%;
+}
+
+@media (max-width: 780px) {
+  .contact-card {
+    width: 100%;
+  }
+}
