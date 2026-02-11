@@ -9,7 +9,7 @@ function ZScaleCalc() {
     const range = maxV - minV;
     const UE_DEFAULT_RANGE = 512;
     const zScale = range !== 0 ? (range / UE_DEFAULT_RANGE) * 100 : 0;
-
+    //todo: .000001 step
     const formatNumber = (num) => {
         return Number(num).toFixed(6).replace(/\.?0+$/, '');
     };
@@ -51,12 +51,17 @@ function ZScaleCalc() {
             Qgis Altitude Level Clipper
             </p>
             <p className="zcalc-subtitle">
-                x,y,z calculator<br/>
+                x,y,z scaling calculator <br/>
                 input:<br/>
-                raster clip, coordinate extext<br/>
+                raster clip, coordinate extent<br/>
                 output: <br />
                 xyz scaling for UE<br />
                 (under construction)
+                <br/>
+                <br/>
+                (shift + scroll = +/- 10 )
+                <br/>
+                (ctrl+ scroll = +/- .00001)
             </p>
 
             <div className="input-group">
@@ -67,7 +72,7 @@ function ZScaleCalc() {
                     type="number"
                     step="any"
                     value={minV}
-                    onChange={(e) => setMinV(Number(e.target.value) || 0)}
+                    onChange={(e) => setMinV(Number(e.target.value))}
                     onFocus={(e) => e.target.select()}
                 />
             </div>
@@ -80,7 +85,7 @@ function ZScaleCalc() {
                     type="number"
                     step="any"
                     value={maxV}
-                    onChange={(e) => setMaxV(Number(e.target.value) || 0)}
+                    onChange={(e) => setMaxV(Number(e.target.value))}
                     onFocus={(e) => e.target.select()}
                 />
             </div>
