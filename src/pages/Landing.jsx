@@ -3,31 +3,30 @@ import { Link } from "react-router-dom"
 import "../App.css";
 import "../styles/zCalc.css";
 import "../styles/ContactCard.css";
-//import NavBar from "../components/NavBar";
 import ContactCard from "../components/ContactCard";
 function Landing() {
   return (
     <div className="app-content">
       <div>
-              <ContactCard />
-              <div className="contact-links">
-              <details className="projects-tree">
-                  <summary>projects</summary>
-                  <ul>
-                      <li>
-                              <Link className="project-links" to="/mca" reloadDocument={true}>
-                              mcgames
-                          </Link>
-                      </li>
-                        
-                      <li>
-                              <Link className="project-links" to="/qalc" reloadDocument={ true}>
-                          q.a.l.c.
-                          </Link>
-                      </li>
-                  </ul>
-              </details>
-              </div>
+        <ContactCard />
+        <div className="contact-links">
+          <details className="projects-tree">
+            <summary>projects</summary>
+            <ul>
+              <li>
+                <Link className="project-links" to="/mca" >
+                  mcgames
+                </Link>
+              </li>
+
+              <li>
+                <Link className="project-links" to="/qalc" >
+                  q.a.l.c.
+                </Link>
+              </li>
+            </ul>
+          </details>
+        </div>
       </div>
     </div>
   );
