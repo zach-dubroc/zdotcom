@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/mca" element={<Games />} />
-        <Route path="/qalc" element={<ZScaleCalc />} />
+        <Route path="/qalc"element={<ZScaleCalc />} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,27 +9,25 @@ function Landing() {
   return (
     <div className="app-content">
       <div>
-        {/*<NavBar />*/}
               <ContactCard />
               <div className="contact-links">
               <details className="projects-tree">
                   <summary>projects</summary>
                   <ul>
                       <li>
-                          <Link className="project-links" to="/mca">
+                              <Link className="project-links" to="/mca" reloadDocument={true}>
                               mcgames
                           </Link>
                       </li>
                         
                       <li>
-                          <Link className="project-links" to="/qalc">
+                              <Link className="project-links" to="/qalc" reloadDocument={ true}>
                           q.a.l.c.
                           </Link>
                       </li>
                   </ul>
               </details>
               </div>
-        {/*<ZScaleCalc />*/}
       </div>
     </div>
   );

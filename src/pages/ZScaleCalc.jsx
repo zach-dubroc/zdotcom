@@ -1,5 +1,6 @@
 // zCalc.jsx
 import { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 function ZScaleCalc() {
     const [minV, setMinV] = useState(0);
     const [maxV, setMaxV] = useState(512);
@@ -106,6 +107,10 @@ function ZScaleCalc() {
                     </code>
                 </div>
             </div>
+            <Link className="calc-home-link" to="/">
+                Back
+            </Link>
+
         </div>
     );
 }
