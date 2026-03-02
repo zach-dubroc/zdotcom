@@ -1,4 +1,18 @@
-// zCalc.jsx
+//dem file, clip to extent over center coord
+//->scratch layer->polygon->zonal-statistics
+//inputs
+//meter_per_pixel:  1.471
+//min:             -14.47704029083252
+//max:              8.534547805786133
+//range:            23.011588096618652
+
+//which runs gdal console call:
+//    gdal_translate - ot UInt16 - of PNG - scale - 14.47704029083252 - 14.47704029083252 0 65535
+//    C: /Users/zacha / qgis / dems / south_ms / echo_clip.tif
+//    C: /Users/zacha / qgis / dems / south_ms / echo_files / echo_scale.png
+//    Results:
+//      OUTPUT: C: /Users/zacha / qgis / dems / south_ms / echo_files / echo_scale.png
+
 import { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 function ZScaleCalc() {
@@ -48,14 +62,7 @@ function ZScaleCalc() {
 
     return (
         <div className="zcalc-container">
-            <p>
-            Qgis Altitude Level Clipper
-            </p>
             <p className="zcalc-subtitle">
-                x,y,z scaling calculator <br/>
-                input:<br/>
-                raster clip, coordinate extent<br/>
-                output: <br />
                 xyz scaling for UE<br />
                 (under construction)
                 <br/>
@@ -64,6 +71,7 @@ function ZScaleCalc() {
                 <br/>
                 (ctrl+ scroll = +/- .00001)
             </p>
+            <iframe id="iframe" src="https://zach-dubroc.github.io/q_selector/"></iframe>
 
             <div className="input-group">
                 <label htmlFor="minV">_min:</label>
@@ -97,7 +105,7 @@ function ZScaleCalc() {
                     <strong>{formatNumber(zScale)} </strong>
                 </div>
                 <div className="results-line">
-                    <p>x,y TODO</p>
+                    <p>x,y should be meter_per_pixel * 100 or UTM map extent from clip</p>
                 </div>
 
                 <div className="gdal-command">
@@ -110,7 +118,6 @@ function ZScaleCalc() {
             <Link className="calc-home-link" to="/">
                 Back
             </Link>
-
         </div>
     );
 }
