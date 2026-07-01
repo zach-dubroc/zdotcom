@@ -63,57 +63,19 @@ function ZScaleCalc() {
     return (
         <div className="zcalc-container">
             <p className="zcalc-subtitle">
-                xyz scaling for UE<br />
-                (under construction)
+                <img src="https://plugins.qgis.org/media/cache/f8/92/f89268dde705a1a7a21ed62c4a6cddb5.png"></img>
+                <br/><a href="https://plugins.qgis.org/plugins/qalc/">
+                QGIS plugin repository page</a>
+                <br/>automations for generating heightmaps from raw terrain data
                 <br/>
                 <br/>
-                (shift + scroll = +/- 10 )
-                <br/>
-                (ctrl+ scroll = +/- .00001)
+                cesium ion example
             </p>
             <iframe id="iframe" src="https://zach-dubroc.github.io/q_selector/"></iframe>
-
-            <div className="input-group">
-                <label htmlFor="minV">_min:</label>
-                <input
-                    ref={minRef}
-                    id="minV"
-                    type="number"
-                    step="any"
-                    value={minV}
-                    onChange={(e) => setMinV(Number(e.target.value))}
-                    onFocus={(e) => e.target.select()}
-                />
-            </div>
-
-            <div className="input-group">
-                <label htmlFor="maxV">_max:</label>
-                <input
-                    ref={maxRef}
-                    id="maxV"
-                    type="number"
-                    step="any"
-                    value={maxV}
-                    onChange={(e) => setMaxV(Number(e.target.value))}
-                    onFocus={(e) => e.target.select()}
-                />
-            </div>
+            <p>unreal engine demo</p>
 
             <div className="results-box">
-                <div className="result-line">
-                    <span>z-scaling:</span>
-                    <strong>{formatNumber(zScale)} </strong>
-                </div>
-                <div className="results-line">
-                    <p>x,y should be meter_per_pixel * 100 or UTM map extent from clip</p>
-                </div>
-
-                <div className="gdal-command">
-                    <div className="gdal-label">gdal arg:</div>
-                    <code>
-                        -scale {minV} {maxV} 0 65535
-                    </code>
-                </div>
+                <iframe  src="https://www.youtube.com/embed/l6h6pNL0UkQ?si=tmSI0yhdkA6M9Ce6&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <Link className="calc-home-link" to="/">
                 Back
